@@ -1,6 +1,6 @@
 {
   "name": "bbok",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "bbok widgets",
   "main": "lib/index.js",
   "files": [
@@ -29,6 +29,7 @@
   "homepage": "https://github.com/knobo/bbok#readme",
   "dependencies": {},
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "npm-git-publish": "^0.2.4-beta"
   }
 }
