@@ -1,0 +1,34 @@
+{
+  "name": "bbok",
+  "version": "1.0.0",
+  "description": "bbok widgets",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "npm run test:jest && npm run test:eslint",
+    "compile": "babel src --out-dir lib",
+    "compile:watch": "babel --watch src --out-dir lib",
+    "test:eslint": "eslint . --ext js,jsx",
+    "test:jest": "jest",
+    "test:jest:watch": "jest --watch",
+    "preversion": "npm run test & npm run compile",
+    "prepublish": "npm run compile",
+    "postpublish": "npm run clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/knobo/bbok.git"
+  },
+  "author": "Knut Olav Bøhmer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knobo/bbok/issues"
+  },
+  "homepage": "https://github.com/knobo/bbok#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
