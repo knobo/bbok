@@ -1,6 +1,6 @@
 {
   "name": "bbok",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "bbok widgets",
   "main": "lib/index.js",
   "files": [
