@@ -1,6 +1,6 @@
 {
   "name": "bbok",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "description": "bbok widgets",
   "main": "lib/index.js",
   "files": [
@@ -10,6 +10,7 @@
     "test": "npm run test:jest && npm run test:eslint",
     "compile": "babel src --out-dir lib",
     "compile:watch": "babel --watch src --out-dir lib",
+    "clean": "rm -rf lib",
     "test:eslint": "eslint . --ext js,jsx",
     "test:jest": "jest",
     "test:jest:watch": "jest --watch",
@@ -31,5 +32,8 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "npm-git-publish": "^0.2.4-beta"
+  },
+  "publishConfig": {
+    "registry": "https://npm.moment.team/"
   }
 }
